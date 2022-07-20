@@ -1,3 +1,5 @@
+using ArdalisRating.Core;
+using ArdalisRating.Core.Model;
 using Newtonsoft.Json;
 using System;
 using System.IO;

@@ -1,8 +1,11 @@
-﻿using System;
+﻿using ArdalisRating.Core.Interfaces;
+using ArdalisRating.Core.Model;
+using ArdalisRating.Infrastructure.Loggers;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace ArdalisRating
+namespace ArdalisRating.Core.Raters
 {
     public class LandPolicyRater : IRater
     {

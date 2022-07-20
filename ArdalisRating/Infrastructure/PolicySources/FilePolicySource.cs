@@ -1,6 +1,6 @@
 ﻿using System.IO;
 
-namespace ArdalisRating
+namespace ArdalisRating.Infrastructure.PolicySources
 {
     public class FilePolicySource
     {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ArdalisRating
+namespace ArdalisRating.Infrastructure.Loggers
 {
     public class ConsoleLogger
     {

@@ -1,6 +1,8 @@
-﻿using System;
+﻿using ArdalisRating.Core;
+using ArdalisRating.Infrastructure.Loggers;
+using System;
 
-namespace ArdalisRating
+namespace ArdalisRating.UI
 {
     class Program
     {

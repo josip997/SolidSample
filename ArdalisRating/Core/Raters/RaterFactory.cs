@@ -1,8 +1,11 @@
-﻿using System;
+﻿using ArdalisRating.Core;
+using ArdalisRating.Core.Interfaces;
+using ArdalisRating.Core.Model;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace ArdalisRating
+namespace ArdalisRating.Core.Raters
 {
     public class RaterFactory
     {
@@ -17,7 +20,7 @@ namespace ArdalisRating
                 case PolicyType.Auto:
                     return new AutoPolicyRater(engine, engine.logger);
                 default:
-                    return null;
+                    return new UnknownPolicyRater(engine, engine.logger);
             }
         }
     }

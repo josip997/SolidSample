@@ -1,8 +1,11 @@
-﻿using System;
+﻿using ArdalisRating.Core.Interfaces;
+using ArdalisRating.Core.Model;
+using ArdalisRating.Infrastructure.Loggers;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace ArdalisRating
+namespace ArdalisRating.Core.Raters
 {
     public class AutoPolicyRater : IRater
     {
@@ -18,7 +21,7 @@ namespace ArdalisRating
         {
             _logger.Log("Rating AUTO policy...");
             _logger.Log("Validating policy.");
-            if (String.IsNullOrEmpty(policy.Make))
+            if (string.IsNullOrEmpty(policy.Make))
             {
                 _logger.Log("Auto policy must specify Make");
                 return;
